@@ -8,7 +8,7 @@ export default class UrlService{
         this._pool = new Pool();
     }
 
-    // POST /short
+    // POST /
     async postCreateUrlService(originalUrl){
         const id = nanoid(8);
         const query = {
@@ -25,7 +25,7 @@ export default class UrlService{
         return result.id;
     }
 
-    // GET /short
+    // GET /
     async getUrlService(id){
         const query = {
             text : `

@@ -11,7 +11,7 @@ export default class UrlHandler{
         this.getUrlHandler = this.getUrlHandler.bind(this);
     }
 
-    // POST /short
+    // POST /
     async postCreateUrlHandler(req,res){
         // TODO : validate input
         const {originalUrl} = req.body
@@ -22,7 +22,7 @@ export default class UrlHandler{
         })
     }
 
-    // GET /short/:id
+    // GET /:id
     async getUrlHandler(req,res){
         // TODO : validate input
 
